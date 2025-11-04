@@ -1,0 +1,136 @@
+/*
+ * Global styles for the professional portfolio site.
+ *
+ * The palette draws inspiration from deep greens and neutrals for a calm,
+ * academic tone. Typography is carefully selected to provide hierarchy
+ * between headings and body text while remaining easy to read.
+ */
+
+/* Import the same Google fonts used in the HTML. This ensures the CSS can
+   take advantage of the font family names declared there. */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset some default browser styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Hero section */
+header.hero {
+  /* Use a subtle green gradient reminiscent of the example site but without
+     relying on external images. */
+  background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+nav .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav .nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav .nav-list li a:hover,
+nav .nav-list li a:focus {
+  color: #e9c46a; /* gold highlight */
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #264653;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #2a9d8f;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+section p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Vita list styling */
+.vita-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.vita-list li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.vita-list li::before {
+  content: '\2022'; /* bullet point */
+  color: #2a9d8f;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Contact section */
+.contact-email a {
+  color: #264653;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-email a:hover,
+.contact-email a:focus {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #264653;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
